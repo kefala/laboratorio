@@ -39,10 +39,14 @@ CREATE TABLE empleados (
 	edad INT NOT NULL,
 	oficina INT NOT NULL,
 	cargo VARCHAR(50) NOT NULL,
-	contrato DATETIME NOT NULL,
+	contrato DATE NOT NULL,
 	jefe INT NOT NULL,
 	cuota DOUBLE NOT NULL,
 	ventas DOUBLE NOT NULL
 );
 
-INSERT INTO empleados VALUES (101,"Andres Landri",45,12,"representante",12/06/95,104,6000.00,6100.00);
+INSERT INTO empleados VALUES (101,"Andres Landri",45,12,"representante",'1995-06-12',104,6000.00,6100.00),
+(102,"Alberto Juarez",48,21,"representante",'1995-06-12',108,7000.00,9500.00),
+(103,"Juan Rovira",29,12,"representante",'2004-10-03',104,5500.00,5800.00),
+(104,"José Gonzalez",40,12,"dir ventas",'1990-06-15',106,4000.00,2900.00),
+(105,"Vicente Mari",35,13,"representante",'1992-04-12',104,7000.00,7450.00)

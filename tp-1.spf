@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>laboratorio</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>root@127.0.0.1</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClZudW1jbGnSHh8tLl8Q
+			D05TTXV0YWJsZVN0cmluZ6MtLyNYTlNTdHJpbmfSHh8xMl5OU011
+			dGFibGVBcnJheaMxMyNXTlNBcnJhedIeHyI1oiIjXxAPTlNLZXll
+			ZEFyY2hpdmVy0Tg5VGRhdGGAAQAIABEAGgAjAC0AMgA3AEUASwBS
+			AFoAZQBsAHAAcgB0AHYAegB8AH4AgACCAIcAjACRALoAwQDCAMMA
+			xQDKANUA3gD0APgBBQEOARMBFQEXARkBHgEoASoBMQE2AUgBTAFV
+			AVoBaQFtAXUBegF9AY8BkgGXAAAAAAAAAgEAAAAAAAAAOgAAAAAA
+			AAAAAAAAAAAAAZk=
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1240, 760}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>create database laboratorio;
+use laboratorio;
+show tables;
+
+CREATE TABLE clientes (
+	numcli INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	nombre VARCHAR(50) NOT NULL,
+	representante INT NOT NULL,
+	limitecredito FLOAT NULL
+);
+
+INSERT INTO clientes VALUES 
+(1001, "Juan Alberto Paz", 106, 1300.00),
+(1002,"Alvaro Sanz",101,1300.00),
+(1003,"Jorge Lorens",105,1000.00),
+(1004, "Antonio Canales", 101, 900.00),
+(1005,"Juan Suárez",102,1300.00),
+(1007,"Julián López",110,700.00),
+(1008,"Julia Miguez",109,1100.00),
+(1010,"Alberto Romero",103, 500.00),
+(1011,"Carlos García",103,1000.00),
+(1012,"Marta Alvarez",108,1000.00),
+(1013,"Ana Marat",104,400.00),
+(1014,"Cristina Caceres", 102,400.00),
+(1015,"Antonio Guasch",101,400.00),
+(1016,"Oscar Tarragos",106,700.00),
+(1017,"Juan Alvarez",108,1200.00),
+(1019,"Caludia Buena",109,500.00),
+(1020,"Jose Marmol",102,1000.00),
+(1021,"Vicente Tur",103,900.00),
+(1022,"Juan Bottini",105,600.00),
+(1023,"Pedro Soto",102,800.00),
+(1024,"Juan Zapata",107,800.00);
+
+
+CREATE TABLE empleados (
+	numemp INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	nombre VARCHAR(50) NOT NULL,
+	edad INT NOT NULL,
+	oficina INT NOT NULL,
+	cargo VARCHAR(50) NOT NULL,
+	contrato DATE NOT NULL,
+	jefe INT NOT NULL,
+	cuota DOUBLE NOT NULL,
+	ventas DOUBLE NOT NULL
+);
+
+INSERT INTO empleados VALUES (101,"Andres Landri",45,12,"representante",'1995-06-12',104,6000.00,6100.00),
+(102,"Alberto Juarez",48,21,"representante",'1995-06-12',108,7000.00,9500.00),
+(103,"Juan Rovira",29,12,"representante",'2004-10-03',104,5500.00,5800.00),
+(104,"José Gonzalez",40,12,"dir ventas",'1990-06-15',106,4000.00,2900.00),
+(105,"Vicente Mari",35,13,"representante",'1992-04-12',104,7000.00,7450.00)</string>
+			<key>table</key>
+			<string>clientes</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>CREATE TABLE empleados (
+	numemp INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	nombre VARCHAR(50) NOT NULL,
+	edad INT NOT NULL,
+	oficina INT NOT NULL,
+	cargo VARCHAR(50) NOT NULL,
+	contrato DATE NOT NULL,
+	jefe INT NOT NULL,
+	cuota DOUBLE NOT NULL,
+	ventas DOUBLE NOT NULL
+)</string>
+		<string>create database laboratorio;
+use laboratorio;
+show tables;
+CREATE TABLE clientes (
+	numcli INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	nombre VARCHAR(50) NOT NULL,
+	representante INT NOT NULL,
+	limitecredito FLOAT NULL
+);
+INSERT INTO clientes VALUES 
+(1001, "Juan Alberto Paz", 106, 1300.00),
+(1002,"Alvaro Sanz",101,1300.00),
+(1003,"Jorge Lorens",105,1000.00),
+(1004, "Antonio Canales", 101, 900.00),
+(1005,"Juan Suárez",102,1300.00),
+(1007,"Julián López",110,700.00),
+(1008,"Julia Miguez",109,1100.00),
+(1010,"Alberto Romero",103, 500.00),
+(1011,"Carlos García",103,1000.00),
+(1012,"Marta Alvarez",108,1000.00),
+(1013,"Ana Marat",104,400.00),
+(1014,"Cristina Caceres", 102,400.00),
+(1015,"Antonio Guasch",101,400.00),
+(1016,"Oscar Tarragos",106,700.00),
+(1017,"Juan Alvarez",108,1200.00),
+(1019,"Caludia Buena",109,500.00),
+(1020,"Jose Marmol",102,1000.00),
+(1021,"Vicente Tur",103,900.00),
+(1022,"Juan Bottini",105,600.00),
+(1023,"Pedro Soto",102,800.00),
+(1024,"Juan Zapata",107,800.00);
+CREATE TABLE empleados (
+	numemp INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	nombre VARCHAR(50) NOT NULL,
+	edad INT NOT NULL,
+	oficina INT NOT NULL,
+	cargo VARCHAR(50) NOT NULL,
+	contrato DATETIME NOT NULL,
+	jefe INT NOT NULL,
+	cuota DOUBLE NOT NULL,
+	ventas DOUBLE NOT NULL
+)</string>
+		<string>CREATE TABLE empleados (
+	numemp INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	nombre VARCHAR(50) NOT NULL,
+	edad INT NOT NULL,
+	oficina INT NOT NULL,
+	cargo VARCHAR(50) NOT NULL,
+	contrato DATETIME NOT NULL,
+	jefe INT NOT NULL,
+	cuota DOUBLE NOT NULL,
+	ventas DOUBLE NOT NULL
+)</string>
+		<string>INSERT INTO clientes VALUES 
+(1001, "Juan Alberto Paz", 106, 1300.00),
+(1002,"Alvaro Sanz",101,1300.00),
+(1003,"Jorge Lorens",105,1000.00),
+(1004, "Antonio Canales", 101, 900.00),
+(1005,"Juan Suárez",102,1300.00),
+(1007,"Julián López",110,700.00),
+(1008,"Julia Miguez",109,1100.00),
+(1010,"Alberto Romero",103, 500.00),
+(1011,"Carlos García",103,1000.00),
+(1012,"Marta Alvarez",108,1000.00),
+(1013,"Ana Marat",104,400.00),
+(1014,"Cristina Caceres", 102,400.00),
+(1015,"Antonio Guasch",101,400.00),
+(1016,"Oscar Tarragos",106,700.00),
+(1017,"Juan Alvarez",108,1200.00),
+(1019,"Caludia Buena",109,500.00),
+(1020,"Jose Marmol",102,1000.00),
+(1021,"Vicente Tur",103,900.00),
+(1022,"Juan Bottini",105,600.00),
+(1023,"Pedro Soto",102,800.00),
+(1024,"Juan Zapata",107,800.00)</string>
+		<string>CREATE TABLE clientes (
+	numcli INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	nombre VARCHAR(50) NOT NULL,
+	representante INT NOT NULL,
+	limitecredito FLOAT NULL
+)</string>
+		<string>show tables</string>
+		<string>use laboratorio</string>
+		<string>update applications set partner = 'DT' where id = 102</string>
+		<string>pdate applications set partner = 'DT' where id = 102</string>
+		<string>update app_2_market set is_added = "N", is_staging = "N" where application_id = 102</string>
+		<string>update app_2_market set is_added = "N", is_staging = "N" where application_id = 1</string>
+		<string>update app_2_market set is_added = "N", is_staging = "N" where application_id = 3</string>
+		<string>update app_2_market set is_added = "N", is_staging = "N" where id = 3</string>
+		<string>update app_2_market set is_added = "N", is_staging = "N" where id = 1</string>
+		<string>select * from app_2_market where id = 1</string>
+		<string>select * from app_2_market where application_id = 3</string>
+		<string>select * from app_2_market where application_id = 9</string>
+		<string>update app_2_market set is_added = "N", is_staging = "N" where id = 6</string>
+		<string>update applications set partner = 'DT' where id = 9</string>
+		<string>update app_2_market set is_added = "N", is_staging = "N" where id = 9</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.40-0ubuntu0.14.04.1</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
