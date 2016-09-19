@@ -33,3 +33,4 @@ INSERT INTO laboratio VALUES
 (1024,"Juan Zapata",107,800.00);
 
 
+
