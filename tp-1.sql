@@ -9,7 +9,7 @@ CREATE TABLE clientes (
 	limitecredito FLOAT NULL
 );
 
-INSERT INTO laboratio VALUES 
+INSERT INTO clientes VALUES 
 (1001, "Juan Alberto Paz", 106, 1300.00),
 (1002,"Alvaro Sanz",101,1300.00),
 (1003,"Jorge Lorens",105,1000.00),
@@ -33,4 +33,16 @@ INSERT INTO laboratio VALUES
 (1024,"Juan Zapata",107,800.00);
 
 
+CREATE TABLE empleados (
+	numemp INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	nombre VARCHAR(50) NOT NULL,
+	edad INT NOT NULL,
+	oficina INT NOT NULL,
+	cargo VARCHAR(50) NOT NULL,
+	contrato DATETIME NOT NULL,
+	jefe INT NOT NULL,
+	cuota DOUBLE NOT NULL,
+	ventas DOUBLE NOT NULL
+);
 
+INSERT INTO empleados VALUES (101,"Andres Landri",45,12,"representante",12/06/95,104,6000.00,6100.00);
