@@ -64,7 +64,7 @@
 			<key>contentSortColIsAsc</key>
 			<true/>
 			<key>contentViewport</key>
-			<string>{{0, 0}, {1240, 760}}</string>
+			<string>{{0, 0}, {694, 450}}</string>
 			<key>isToolbarVisible</key>
 			<true/>
 			<key>queries</key>
@@ -119,7 +119,12 @@ INSERT INTO empleados VALUES (101,"Andres Landri",45,12,"representante",'1995-06
 (102,"Alberto Juarez",48,21,"representante",'1995-06-12',108,7000.00,9500.00),
 (103,"Juan Rovira",29,12,"representante",'2004-10-03',104,5500.00,5800.00),
 (104,"José Gonzalez",40,12,"dir ventas",'1990-06-15',106,4000.00,2900.00),
-(105,"Vicente Mari",35,13,"representante",'1992-04-12',104,7000.00,7450.00)</string>
+(105,"Vicente Mari",35,13,"representante",'1992-04-12',104,7000.00,7450.00),
+(106,"Luis Antonio",52,11,"dir general",'1990-06-14',null,5500.00,5990.00),
+(107,"Germán Gutierrez",32,22,"representante",'1993-09-14',108,6000.00,3750.00),
+(108,"Elsa Bustillo",31,21,"dir ventas",'1996-10-12',106,7000.00,7240.00),
+(109,"Marta López",30,11,"representante",'2003-10-12',106,6000.00,7800.00),
+(110,"Víctor Stangen",45,null,"representante",'2005-11-13',104,null,15200.00);</string>
 			<key>table</key>
 			<string>clientes</string>
 			<key>view</key>
