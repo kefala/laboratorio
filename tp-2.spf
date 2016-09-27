@@ -11,7 +11,7 @@
 		<key>connection</key>
 		<dict>
 			<key>database</key>
-			<string>appdirect</string>
+			<string>laboratorio</string>
 			<key>host</key>
 			<string>127.0.0.1</string>
 			<key>name</key>
@@ -40,29 +40,37 @@
 		<key>session</key>
 		<dict>
 			<key>connectionEncoding</key>
-			<string>utf8</string>
+			<string>latin1</string>
+			<key>contentFilter</key>
+			<dict/>
 			<key>contentPageNumber</key>
 			<integer>1</integer>
 			<key>contentSelection</key>
 			<data>
-			YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFy
-			Y2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJX
-			TlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAF
-			gAdUdHlwZVRyb3dzXxAdU2VsZWN0aW9uRGV0YWlsVHlwZU5TSW5k
-			ZXhTZXTSFwsYGVxOU1JhbmdlQ291bnQQAIAG0hscHR5aJGNsYXNz
-			bmFtZVgkY2xhc3Nlc1pOU0luZGV4U2V0oh8gWk5TSW5kZXhTZXRY
-			TlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVk
-			QXJjaGl2ZXLRJidUZGF0YYABAAgAEQAaACMALQAyADcAQABGAE0A
-			VQBgAGcAagBsAG4AcQBzAHUAdwB8AIEAoQCmALMAtQC3ALwAxwDQ
-			ANsA3gDpAPIA9wEEAQcBGQEcASEAAAAAAAACAQAAAAAAAAAoAAAA
-			AAAAAAAAAAAAAAABIw==
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClZudW1lbXDSHh8tLl8Q
+			D05TTXV0YWJsZVN0cmluZ6MtLyNYTlNTdHJpbmfSHh8xMl5OU011
+			dGFibGVBcnJheaMxMyNXTlNBcnJhedIeHyI1oiIjXxAPTlNLZXll
+			ZEFyY2hpdmVy0Tg5VGRhdGGAAQAIABEAGgAjAC0AMgA3AEUASwBS
+			AFoAZQBsAHAAcgB0AHYAegB8AH4AgACCAIcAjACRALoAwQDCAMMA
+			xQDKANUA3gD0APgBBQEOARMBFQEXARkBHgEoASoBMQE2AUgBTAFV
+			AVoBaQFtAXUBegF9AY8BkgGXAAAAAAAAAgEAAAAAAAAAOgAAAAAA
+			AAAAAAAAAAAAAZk=
 			</data>
 			<key>contentSortColIsAsc</key>
 			<true/>
 			<key>contentViewport</key>
-			<string>{{0, 0}, {694, 450}}</string>
+			<string>{{0, 0}, {1240, 739}}</string>
 			<key>isToolbarVisible</key>
 			<true/>
+			<key>table</key>
+			<string>empleados</string>
 			<key>view</key>
 			<string>SP_VIEW_CUSTOMQUERY</string>
 			<key>windowVerticalDividerPosition</key>
@@ -77,6 +85,14 @@
 	<array/>
 	<key>queryHistory</key>
 	<array>
+		<string>SELECT TIMESTAMPDIFF(day, contrato, NOW()) AS 'dias en la empresa' FROM empleados</string>
+		<string>SELECT TIMESTAMPDIFF(day, contrato, NOW()) AS facha FROM empleados</string>
+		<string>SELECT * FROM empleados</string>
+		<string>SELECT numpedido, producto, cant, importe, (importe*cant) AS total FROM pedidos</string>
+		<string>SELECT numpedido, producto, cant, importe, (importe*cant) FROM pedidos</string>
+		<string>SELECT numpedido, producto, cant, precio unitario, total FROM pedidos</string>
+		<string>SELECT numpedido, producto, cantidad, precio unitario, total FROM pedidos</string>
+		<string>SELECT idfab, idproducto, descripcion, precio, (precio*1.21) AS iva FROM productos</string>
 		<string>SELECT nombre, oficina, ventas
 FROM empleados
 WHERE oficina IN (11, 21,22)</string>
@@ -107,18 +123,6 @@ ORDER BY region, 3 DESC</string>
 FROM clientes</string>
 		<string>SELECT nombre, ´tiene un crédito de´, limitecredito 
 FROM clientes</string>
-		<string>SELECT oficina, ciudad, (ventas-objetivo) AS sobreventa 
-FROM oficinas</string>
-		<string>SELECT idfab AS fabricante, idproducto, descripcion 
-FROM productos</string>
-		<string>SELECT idfab AS fabricante, idproducto, descripción 
-FROM productos</string>
-		<string>SELECT nombre, representante 
-FROM clientes</string>
-		<string>SELECT * FROM clientes</string>
-		<string>update users set is_origo_admin='Y', is_analytics_admin='Y', is_corporate_admin='Y', is_layout_designer='Y' WHERE id = 31717</string>
-		<string>update users set is_origo_admin='Y', is_analytics_admin='Y', is_corporate_admin='Y', is_layout_designer='Y' WHERE id = 31716</string>
-		<string>use appdirect</string>
 	</array>
 	<key>rdbms_type</key>
 	<string>mysql</string>
