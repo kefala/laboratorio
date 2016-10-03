@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>laboratorio</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>root@127.0.0.1</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeACldvZmljaW5h0h4fLS5f
+			EA9OU011dGFibGVTdHJpbmejLS8jWE5TU3RyaW5n0h4fMTJeTlNN
+			dXRhYmxlQXJyYXmjMTMjV05TQXJyYXnSHh8iNaIiI18QD05TS2V5
+			ZWRBcmNoaXZlctE4OVRkYXRhgAEACAARABoAIwAtADIANwBFAEsA
+			UgBaAGUAbABwAHIAdAB2AHoAfAB+AIAAggCHAIwAkQC6AMEAwgDD
+			AMUAygDVAN4A9AD4AQUBDgETARUBFwEZAR4BKAEqATIBNwFJAU0B
+			VgFbAWoBbgF2AXsBfgGQAZMBmAAAAAAAAAIBAAAAAAAAADoAAAAA
+			AAAAAAAAAAAAAAGa
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1240, 702}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>table</key>
+			<string>oficinas</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT oficinas.*, empleados.* FROM oficinas left JOIN empleados ON oficinas.oficina = empleados.oficina WHERE oficinas.region ="este"</string>
+		<string>SELECT oficinas.*, empleados.* FROM oficinas INNER JOIN empleados ON oficinas.oficina = empleados.oficina WHERE oficinas.region ="este"</string>
+		<string>SELECT oficinas.*, empleados.* FROM oficinas WHERE oficinas.region ="este" INNER JOIN empleados ON oficinas.oficina = empleados.oficina</string>
+		<string>SELECT oficinas.* FROM oficinas WHERE oficinas.region ="este"</string>
+		<string>SELECT * FROM empleados</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas WHERE oficinas.region ="este"</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas WHERE oficinas.region ="este" INNER JOIN empleados ON empleados.oficina = oficinas.oficina</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas INNER JOIN empleados ON empleados.oficina = oficinas.oficina</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas OUTER JOIN empleados ON empleados.oficina = oficinas.oficina</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas RIGHT JOIN empleados ON empleados.oficina = oficinas.oficina</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas RIGTH JOIN empleados ON empleados.oficina = oficinas.oficina</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas LEFT JOIN empleados ON empleados.oficina = oficinas.oficina</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas LEFT JOIN empleados ON empleados.oficinas = oficinas.oficina</string>
+		<string>SELECT oficinas.*, empleados.nombre FROM oficinas</string>
+		<string>SELECT oficinas.* FROM oficinas</string>
+		<string>SELECT * FROM oficinas</string>
+		<string>SELECT oficinas.oficina, oficinas.ciudad, oficinas.objetivo, oficinas.ventas, empleados.nombre FROM oficinas
+INNER JOIN empleados
+ON empleados.oficina = oficinas.oficina
+WHERE numemp IS NOT NULL 
+ORDER BY oficinas.oficina</string>
+		<string>update appdirect.users set is_origo_admin='Y', is_analytics_admin='Y', is_corporate_admin='Y', is_layout_designer='Y' order by created_on desc limit 1</string>
+		<string>select activation_token, created_on from appdirect.users order by created_on desc limit 1</string>
+		<string>INSERT INTO `channel_settings` (`partner`, `properties`, `is_visible`, `theme_code`, `is_baas`, `direct_sales_properties`, `is_test`, `test_channel`, `certificate_uuid`, `created_on`, `last_modified`, `creator_name`, `marketplace_edition`, `is_customized_edition`)
+VALUES
+	('SOFTBANK', '{\"marketplaceNameMap\":{\"zh_CN\":null,\"ja_JP\":\"Cloudix\",\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"ja\":\"SBC&amp;S\",\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":\"Cloudix\",\"fi\":null,\"de\":null,\"es\":null,\"en\":\"SBC&amp;S Marketplace Test\",\"sv\":null,\"en_US\":\"SBC&amp;S Marketplace Test\",\"lt\":null},\"supportUrlMap\":{\"zh_CN\":null,\"ja_JP\":\"https://www.it-ex.com/contact/cloudix/\",\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":null,\"fi\":null,\"de\":null,\"es\":null,\"en\":null,\"sv\":null,\"en_US\":\"https://www.it-ex.com/contact/cloudix/\",\"lt\":null},\"supportEmailMap\":{\"zh_CN\":null,\"ja_JP\":\"SBCASGRP-cloudix@g.softbank.co.jp\",\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"ja\":\"no-reply@appdirect.com\",\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":\"SBCASGRP-cloudix@g.softbank.co.jp\",\"fi\":null,\"de\":null,\"es\":null,\"en\":\"SBCASGRP-cloudix@g.softbank.co.jp\",\"sv\":null,\"en_US\":\"SBCASGRP-cloudix@g.softbank.co.jp\",\"lt\":null},\"supportContactUrlMap\":{\"zh_CN\":null,\"ja_JP\":\"https://www.it-ex.com/contact/cloudix/\",\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":\"http://cas.softbank.jp/contact/form/general.html\",\"fi\":null,\"de\":null,\"es\":null,\"en\":null,\"sv\":null,\"en_US\":\"https://www.it-ex.com/contact/cloudix/\",\"lt\":null},\"smtpFromMap\":{\"zh_CN\":\"no-reply@appdirect.com\",\"ja_JP\":\"SBCASGRP-cloudix@g.softbank.co.jp\",\"pt\":\"no-reply@appdirect.com\",\"es_MX\":\"no-reply@appdirect.com\",\"fr\":\"no-reply@appdirect.com\",\"ru\":\"no-reply@appdirect.com\",\"ja\":\"no-reply@appdirect.com\",\"zh_TW\":\"no-reply@appdirect.com\",\"it\":\"no-reply@appdirect.com\",\"ko\":\"no-reply@appdirect.com\",\"es_419\":\"no-reply@appdirect.com\",\"da\":\"no-reply@appdirect.com\",\"de_DE\":\"SBCASGRP-cloudix@g.softbank.co.jp\",\"fi\":\"no-reply@appdirect.com\",\"de\":\"no-reply@appdirect.com\",\"es\":\"no-reply@appdirect.com\",\"en\":\"SBCASGRP-cloudix@g.softbank.co.jp\",\"sv\":\"no-reply@appdirect.com\",\"en_US\":\"SBCASGRP-cloudix@g.softbank.co.jp\",\"lt\":\"no-reply@appdirect.com\"},\"privacyPolicyUrlMap\":{\"zh_CN\":null,\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"ja\":\"http://cas.softbank.jp/privacy/index.html\",\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":\"http://cas.softbank.jp/privacy/index.html\",\"fi\":null,\"de\":null,\"es\":null,\"en\":\"http://cas.softbank.jp/en/privacy/index.html\",\"sv\":null,\"en_US\":\"http://cas.softbank.jp/en/privacy/index.html\",\"lt\":null},\"legalDetailsUrlMap\":{\"zh_CN\":null,\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":null,\"fi\":null,\"de\":null,\"es\":null,\"en\":null,\"sv\":null,\"en_US\":null,\"lt\":null},\"termsUrlMap\":{\"zh_CN\":null,\"ja_JP\":\"http://smabiz.jp/cloudix/policies/pdf/terms-of-service.pdf\",\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"ja\":\"http://cas.softbank.jp/privacy/index.html#security\",\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":\"http://smabiz.jp/cloudix/policies/pdf/terms-of-service.pdf\",\"fi\":null,\"de\":null,\"es\":null,\"en\":\"http://smabiz.jp/cloudix/policies/pdf/terms-of-service.pdf\",\"sv\":null,\"en_US\":\"http://smabiz.jp/cloudix/policies/pdf/terms-of-service.pdf\",\"lt\":null},\"supportPhone\":null,\"smtpBcc\":\"sbbmb-cloudix_contact@g.softbank.co.jp\",\"logoFileKey\":\"img7672462896768264746.png?984d32fe69520a45bb61ba9a9161b839\",\"accentColor\":null,\"redirectUrl\":null,\"themeVariation\":null,\"companyName\":\"ソフトバンクコマース&amp;サービス株式会社\",\"baseUrl\":\"https://testsoftbank.appdirect.com\",\"altBaseUrls\":[],\"legacyBaseUrls\":[],\"capabilities\":[\"RESELLER\",\"STORE_FRONT\",\"RESELLER_SIGNUP\",\"MIGRATION\",\"DEVELOPER\",\"PRODUCT_BUNDLES\",\"DEVELOPER_NETWORK\",\"QUESTIONS_AND_ANSWERS\",\"CUSTOMER_BILLING_MANAGEMENT\",\"USER_MANAGEMENT\",\"CUSTOMER_APPLICATION_MANAGEMENT\",\"NETWORK_CATALOG\",\"CHANNEL_MANAGEMENT\",\"CHECKOUT\",\"SECURITY_SETTINGS\",\"PRODUCT_PURCHASE\"],\"customIntegrationSupportEmailMap\":{},\"smtpReviewApproval\":null,\"leadsEmail\":null,\"reportsEmail\":null,\"developerDocsUrl\":null,\"changeOwnershipRequestEmail\":null,\"domainReactivationEmail\":null,\"developerTermsUrlMap\":{},\"minimumReviewsForRating\":1,\"gracePeriodInDays\":999,\"domainGracePeriodInDays\":999,\"billingCycleFrequency\":\"MONTHLY\",\"publicKey\":null,\"purchaseLimit\":0,\"thirtyDaysPurchaseLimit\":0,\"recaptchaPublicKey\":null,\"recaptchaPrivateKey\":null,\"includeCaptchaInRegistration\":false,\"canImpersonate\":true,\"impersonatedAppAccessAllowed\":false,\"impersonateDuration\":1,\"channelDecidesIfOnlyAdminsCanBuy\":true,\"onlyAdminsCanBuy\":true,\"collectPurchaseRequestDetails\":false,\"allowVendorContractSettings\":true,\"blockContractUpgrades\":false,\"blockContractDowngrades\":false,\"allowContractDurationIncreaseOverPrice\":false,\"blockContractDecrease\":false,\"blockOriginalContractDecrease\":false,\"jbillingEnabled\":true,\"marketingRemindersEnabled\":false,\"chatEnabled\":false,\"hideAllUI\":false,\"forceUserLogin\":false,\"useEditionRank\":true,\"skuEnabled\":true,\"skuMandatory\":true,\"analyticsId\":null,\"suppressProductEmailsInBundle\":false,\"assistedSalesCvvCheckEnabled\":true,\"resellerEnabled\":true,\"salesAgentPurchaseApprovalType\":\"CHOOSE\",\"salesOpportunitiesEnabled\":true,\"salesLeadsEnabled\":true,\"resellerTermsUrlMap\":{\"zh_CN\":null,\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":null,\"fi\":null,\"de\":null,\"es\":null,\"en\":null,\"sv\":null,\"en_US\":null,\"lt\":null},\"resellerLeadsTermsUrlMap\":{\"zh_CN\":null,\"pt\":null,\"es_MX\":null,\"fr\":null,\"ru\":null,\"zh_TW\":null,\"it\":null,\"ko\":null,\"es_419\":null,\"da\":null,\"de_DE\":null,\"fi\":null,\"de\":null,\"es\":null,\"en\":null,\"sv\":null,\"en_US\":null,\"lt\":null},\"developerTermsUpdatedOn\":null,\"assignmentToInactiveUsersEnabled\":false,\"securityPolicy\":\"DEFAULT\",\"vendorsChooseUsageModel\":true,\"vendorsChooseReferral\":true,\"hasReferralProducts\":true,\"addonApplicationProductTypes\":[\"WEB_APP\"],\"productTypePropertiesMap\":{\"WEB_APP\":{\"referral\":false,\"usageType\":\"MULTI_USER\",\"visible\":true},\"WEB_APP_MANUAL_SETUP\":{\"referral\":false,\"usageType\":\"MULTI_USER\",\"visible\":true}},\"supportedRevenueModels\":[\"FREE\",\"RECURRING\",\"TIERED\",\"ONE_TIME\"],\"allowDiscountCredit\":true,\"editionRestrictionsEnabled\":true,\"freeFirstPartialPeriod\":true,\"secureSSRCustomerData\":false,\"supportedLocales\":[\"ja_JP\",\"en_US\"],\"defaultLocale\":\"en_US\",\"companyDefaultCountry\":\"JP\",\"trustedProviders\":[],\"zendeskApiToken\":null,\"zendeskSubdomain\":null,\"internalAnalyticsId\":null,\"walkmeScriptUrl\":null,\"zopimScriptUrl\":null,\"cmsCurrencies\":[\"JPY\"],\"supportedPricingDurations\":[\"MONTHLY\",\"QUARTERLY\",\"SIX_MONTHS\",\"YEARLY\",\"TWO_YEARS\",\"THREE_YEARS\",\"DAILY\"],\"storageClientKey\":null,\"storageClientSecret\":null,\"storageBucketPath\":null,\"storageType\":\"S3\",\"useExternalIdForApi\":false,\"userUpdateIntegrationEnabled\":false,\"scheduledCancellationEnabled\":false,\"marketplaceCreditEnabled\":false,\"mosiEnabled\":true,\"mosiCrossProductEnabled\":true,\"mosiAdditionalTransitionsEnabled\":true,\"mosiStrongPasswordRequired\":false,\"mosiPasswordNeverExpires\":false,\"mosiSso\":false,\"vendorResellerPurchaseEnabled\":true,\"devicePlatformsEnabled\":false,\"productVersionsEnabled\":false,\"productVersionsBaseUrl\":null,\"highResolutionImagesEnabled\":false,\"alertingEnabled\":false,\"domainsResellerEditionId\":null,\"faviconFileKey\":\"favicon3587746011127313887.ico?d646bec0108852cd3a8b8108d9f84da2\",\"mpCurrencies\":[\"JPY\"],\"taxAPIType\":\"FLAT\",\"flatTaxRate\":0.08,\"taxIncludedInPrices\":false,\"countrySettings\":[],\"partnerIpAddresses\":[],\"trustedURLs\":[],\"buyAlwaysRequiresBillingInfo\":false,\"buyFreeTrialRequiresBillingInfo\":false,\"buyFullyDiscountedRequiresBillingInfo\":false,\"autoUpgradeToPaid\":false,\"editionLevelOverride\":false,\"analyticsEnabled\":true,\"identityProvider\":false,\"identityProviderType\":null,\"identityProviderUrl\":null,\"logoutUrl\":null,\"allowedClaimedIdPatterns\":null,\"oauth2Provider\":null,\"offOrderChargeEnabled\":false,\"userAndCompanyAutoActivationFromAPI\":false,\"approvesUserContent\":false,\"allCompaniesVendors\":false,\"allAdmins\":false,\"manualEventRecoveryEnabled\":false,\"hideCustomerInfoFromDevelopers\":false,\"developerCanHide\":true,\"developerCanViewLeads\":false,\"hideQuestions\":false,\"reviewRequirePurchase\":false,\"showProfiles\":true,\"phoneNumberRequired\":false,\"hideSupportSection\":false,\"hidePaidProducts\":false,\"oneClickTrialEnabled\":true,\"listingOnly\":false,\"securitySealEnabled\":false,\"demoFeatures\":false,\"inviteOnly\":true,\"hideSignupLinks\":false,\"selfManagedCompanyStructure\":false,\"externallyManagedRoles\":false,\"noIdentity\":false,\"noPermissionForImpersonation\":true,\"trackLogout\":false,\"integrationProvider\":false,\"cmsEnabled\":true,\"allowCustomProductTerms\":false,\"termsForAllProductPurchasesRequired\":false,\"termsForAllProductPurchasesUrl\":null,\"developerPrivacyTermsRequired\":false,\"encryptBankAccount\":false,\"delayedCancel\":false,\"delayedDowngrade\":false,\"showInvoicePage\":false,\"singleInvoicePerOrder\":false,\"autoPaidForRecurringCharges\":true,\"markFirstPaymentAsPaid\":false,\"roundRevenueShares\":false,\"datatransCheckoutEnabled\":false,\"dtagCheckoutEnabled\":false,\"paypalCheckoutEnabled\":false,\"dtagPayout\":false,\"productTypesOnNavigation\":true,\"categoriesRequired\":true,\"showPopular\":true,\"categoriesDescription\":null,\"categoryPreFilteringEnabled\":false,\"vendorShare\":0.7,\"partnerShare\":0.3,\"appdirectShare\":0,\"partnerAppPartnerShare\":1,\"partnerAppAppdirectShare\":0,\"avataxAccount\":null,\"avataxLicense\":null,\"oneSourceUrl\":null,\"oneSourceUsername\":null,\"oneSourcePassword\":null,\"oneSourceExternalCompanyId\":null,\"reportingEnabled\":true,\"activeReportTypes\":[\"COMPANIES_CSV\",\"PAYMENTS_DETAIL_CSV\",\"RECONCILIATION\",\"ORDER_PRODUCTS_CSV\",\"INVOICES_CSV\",\"MIGRATION_PRODUCT_DATA\",\"CUSTOMERS_CSV\",\"ACTIVE_UNCONVERTED_USERS\",\"FREE_TRIALS\",\"CANCELLED_ENTITLEMENTS\",\"NOT_USED_APP\",\"APPLICATION_USAGE\",\"ORDER_EDITIONS_CSV\",\"SUSPENDED_PURCHASED\",\"PAYMENTS_OVERVIEW_CSV\",\"TRANSACTIONS\",\"FAILED_ORDERS\"],\"encryptReports\":false,\"reportBucket\":null,\"appStatusUrl\":null,\"manualPaymentsEnabled\":true,\"cloudFoundryConfig\":null,\"cloudFoundry\":false,\"ldapSyncEnabled\":false,\"ldapSyncDownloadUrl\":null,\"ldapSyncAllowedVersions\":null,\"agreeToTermsForOneClickBuy\":false,\"externalIdpSignupUrl\":null,\"externalIdpCreateUserUrl\":null,\"externalIdpManageUsersUrl\":null,\"externalIdpMySettingsUrl\":null,\"externalIdpAuthorizationPolicyErrorUrl\":null,\"importAppsConfigurable\":false,\"importAppsEnabled\":false,\"keychainApiRealmId\":null,\"keychainApiUrl\":null,\"appUserSyncBaseUrl\":null,\"passwordProtected\":false,\"marketplaceUsername\":null,\"marketplacePassword\":null,\"azureSyncJobEnabled\":true,\"azureSyncJobDeltaEnabled\":false,\"parkAzureUsersEnabled\":true,\"roundOrderItems\":true,\"wwdConfig\":{\"enabled\":false,\"account\":null,\"password\":null},\"externalUrl\":null,\"allowChannelAdminEditTaxCode\":false,\"ticketSupportEmail\":null,\"emailCopySalesRepOnBillingEvents\":false,\"setupGuideProgress\":1000,\"guideProgresses\":{\"CHANNEL\":1000},\"standingCloudPrivateLabelId\":null,\"addonBundleConnectorTarget\":false,\"allowSalesAgentEnterPaymentDetails\":true,\"salesAgentSendSignupEmail\":true,\"hideChannelUserInfoFromCustomers\":true,\"showSocialMediaLinks\":false,\"showV2HomePageTheme\":true,\"showV2ListingPageTheme\":true,\"showV2ProfilePageTheme\":true,\"showV2CheckoutPageTheme\":false,\"accountStatus\":\"PAID\",\"usersCanCompleteOwnQuotes\":false,\"resellerCanMarkupPrices\":true,\"numberOfOldPasswords\":1,\"customPasswordPolicy\":false,\"autoRenewLatestPrice\":true,\"lockPriceOnContract\":true,\"companyWideBilling\":true,\"twoFactorAuthenticationEnabled\":false,\"twoFactorTokenViaSms\":false,\"twoFactorSuperuserExcluded\":false,\"twoFactorRequiredRoles\":[\"CHANNEL_ADMIN\"],\"twoFactorTokenTolerance\":300,\"twoFactorTrustedDeviceEnabled\":false,\"twoFactorTrustedDeviceForDaysCount\":14,\"webhookProxyInfo\":{\"webhookProxyEnabled\":false,\"webhookProxyUrl\":null,\"webhookProxySecurityKey\":null,\"webhookProxySecuritySecret\":null},\"openstackConfig\":{\"authUrl\":null,\"username\":null,\"apiKey\":null,\"container\":null},\"ftpsConfig\":{\"hostname\":null,\"port\":null,\"username\":null,\"password\":null,\"pathname\":null,\"implicit\":false,\"protocolOfEncryption\":null,\"dataChannelProtectionLevel\":null,\"protectionBufferSize\":null,\"passive\":false,\"certificatePath\":null,\"certificateType\":null,\"certificateKeyPassword\":null,\"proxyEnabled\":false,\"proxyType\":null,\"retryCount\":0,\"retryMilliseconds\":0},\"metaDescription\":\".\",\"metaKeywords\":\".\",\"metaNoIndex\":false,\"registrar\":null,\"customAttributesEnabled\":true,\"defaultRevenueStrategy\":\"SIMPLE\",\"smsGatewayType\":\"NONE\",\"twilioAccountSid\":null,\"twilioAuthToken\":null,\"twilioPhoneNumber\":null,\"smsNotificationsEnabled\":false,\"customerOnboardingEnabled\":false,\"customerOnboardingAdapterClass\":null,\"logsDTCLOUD5528Enabled\":false,\"betaAddonApplicationsEnabled\":true,\"betaWholesaleQuotesEnabled\":true,\"betaUsersCanSaveOwnQuotes\":false,\"betaSelfServiceRestrictionEnabled\":false,\"assignedUsersLimitEmailsEnabled\":false,\"assignedUsersLimitEmails\":null,\"billingFeedCounter\":1,\"openMigrationEnabled\":false,\"oneClickMigration\":true,\"allowExternalReferenceCode\":false,\"preAuthorizationSupported\":true,\"detailedTaxEnabled\":false,\"forceReauthentication\":false,\"authenticationGracePeriodInSeconds\":60,\"showSetupGuide\":true,\"alwaysUseManualPaymentForSalesAgentOrders\":true,\"alwaysUseManualPaymentForCustomerOrders\":false,\"retrieveUUIDPostMigration\":false,\"showV2Domains\":false,\"showV2AppAssignments\":false,\"sprintContractEndpointUrl\":\"https://connect-preprod.ibm.com/sprint/test_3/SprintContractService/v1.0/appdirect\",\"sprintBillingEndpointUrl\":\"https://connect-preprod.ibm.com/sprint/test_3/SprintBillingService/v2.0/appdirect\",\"sprintEndpointUser\":\"applicationKey$US@appdirect.com\",\"sprintEndpointPassword\":\"p0vcxAwY7Y00E8ILSmVn\"}', 'Y', 'softbank', 'N', '{\"marketplaceNameMap\":{\"ja\":\"Cloudixマーケットプレース\"},\"supportUrlMap\":{},\"supportEmailMap\":{},\"supportContactUrlMap\":{},\"smtpFromMap\":{\"ja\":\"no-reply_cloudix@cloudix.dummy.com\",\"ja_JP\":\"sbbmb-cloudix_v1@g.softbank.co.jp\"},\"privacyPolicyUrlMap\":{},\"legalDetailsUrlMap\":{},\"termsUrlMap\":{},\"supportPhone\":null,\"smtpBcc\":null,\"logoFileKey\":null,\"accentColor\":null,\"redirectUrl\":null}', 'N', NULL, NULL, '2016-01-27 00:03:26', '2016-09-28 04:25:26', 'Scott Campbell', 'STORE', 'N')</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.40-0ubuntu0.14.04.1</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
