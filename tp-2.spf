@@ -54,7 +54,7 @@
 			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
 			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
 			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
-			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClZudW1lbXDSHh8tLl8Q
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClZjb2RpZ2/SHh8tLl8Q
 			D05TTXV0YWJsZVN0cmluZ6MtLyNYTlNTdHJpbmfSHh8xMl5OU011
 			dGFibGVBcnJheaMxMyNXTlNBcnJhedIeHyI1oiIjXxAPTlNLZXll
 			ZEFyY2hpdmVy0Tg5VGRhdGGAAQAIABEAGgAjAC0AMgA3AEUASwBS
@@ -66,11 +66,11 @@
 			<key>contentSortColIsAsc</key>
 			<true/>
 			<key>contentViewport</key>
-			<string>{{0, 0}, {1240, 739}}</string>
+			<string>{{0, 0}, {1240, 723}}</string>
 			<key>isToolbarVisible</key>
 			<true/>
 			<key>table</key>
-			<string>empleados</string>
+			<string>pedidos</string>
 			<key>view</key>
 			<string>SP_VIEW_CUSTOMQUERY</string>
 			<key>windowVerticalDividerPosition</key>
@@ -85,6 +85,25 @@
 	<array/>
 	<key>queryHistory</key>
 	<array>
+		<string>SELECT *
+FROM pedidos
+WHERE DATE_FORMAT(fechapedido, '%c') = 4</string>
+		<string>SELECT * 
+FROM productos
+ORDER BY precio ASC
+LIMIT 5</string>
+		<string>SELECT TOP 5 * 
+FROM productos
+ORDER BY precio ASC</string>
+		<string>SELECT COUNT(nombre) as clientes, representante
+FROM clientes
+GROUP BY representante
+ORDER BY clientes DESC</string>
+		<string>SELECT COUNT(nombre) as clientes, representate
+FROM clientes
+GROUP BY representate
+ORDER BY clientes DESC</string>
+		<string>SELECT nombre, TIMESTAMPDIFF(day, contrato, NOW()) AS 'dias en la empresa' FROM empleados</string>
 		<string>SELECT TIMESTAMPDIFF(day, contrato, NOW()) AS 'dias en la empresa' FROM empleados</string>
 		<string>SELECT TIMESTAMPDIFF(day, contrato, NOW()) AS facha FROM empleados</string>
 		<string>SELECT * FROM empleados</string>
@@ -109,20 +128,6 @@ ORDER BY contrato</string>
 FROM oficinas</string>
 		<string>SELECT DISTNCT dir 
 FROM oficinas</string>
-		<string>SELECT dir 
-FROM oficinas</string>
-		<string>SELECT ALL dir 
-FROM oficinas</string>
-		<string>SELECT region, ciudad, (ventas-objetivo) AS sobreventa 
-FROM oficinas
-ORDER BY region, 3 DESC</string>
-		<string>SELECT region, ciudad, ventas-objetivo) AS sobreventa 
-FROM oficinas
-ORDER BY region, 3 DESC</string>
-		<string>SELECT nombre, 'tiene un crédito de', limitecredito 
-FROM clientes</string>
-		<string>SELECT nombre, ´tiene un crédito de´, limitecredito 
-FROM clientes</string>
 	</array>
 	<key>rdbms_type</key>
 	<string>mysql</string>
