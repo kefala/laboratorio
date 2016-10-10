@@ -22,11 +22,9 @@ SELECT oficinas.ciudad, empleados.nombre FROM oficinas INNER JOIN empleados ON o
 /*
 Listar los pedidos superiores $500, con el nombre del empleado que tomó el pedido y el nombre del cliente que lo solicitó.
 */
-SELECT * FROM pedidos WHERE importe > 500;
-SELECT * FROM empleados;
-
+SELECT pedidos.*, empleados.nombre, clientes.nombre FROM pedidos INNER JOIN empleados ON pedidos.rep = empleados.numemp INNER JOIN clientes ON pedidos.clie = clientes.numcli WHERE importe > 500;
 /*
 Listar los empleados con una cuota superior a la de su jefe, para cada empleado mostrar sus datos y el número, nombre y cuota de su jefe.
 */
-
+SELECT empleado.nombre, empleado.numemp, empleado.cargo, jefe.cuota FROM empleados as empleado INNER JOIN empleados AS jefe ON empleado.jefe = jefe.numemp WHERE empleado.cuota > jefe.cuota;
 
