@@ -41,17 +41,32 @@ SELECT DISTINCT oficinas.oficina, COUNT(*) as 'CANT DE EMPLEADOS' FROM empleados
 /*
 Para cada empleado, obtener su número, nombre, e importe vendido por ese empleado a cada cliente indicando el número de cliente.
 */
-
+SELECT SUM(pedidos.importe) as 'total vendido', pedidos.rep, empleados.nombre, pedidos.clie, clientes.nombre 
+FROM pedidos 
+INNER JOIN clientes ON pedidos.clie = clientes.numcli 
+INNER JOIN empleados ON empleados.numemp = pedidos.rep 
+GROUP BY pedidos.rep, pedidos.clie;
 
 /*
 Para cada empleado cuyos pedidos suman más de $1500, hallar su importe medio de pedidos. En el resultado indicar el número de empleado y su importe medio de pedidos.
 */
+SELECT rep, AVG(importe) AS 'IMPORTE MEDIO' 
+FROM pedidos 
+GROUP BY rep 
+HAVING SUM(importe) > 1500;
 
 /*
 Saber cuántas (no cuales) oficinas tienen empleados con ventas superiores a su objetivo.
 */
+SELECT COUNT(*) as 'Buenas' FROM oficinas WHERE objetivo < ventas;
 
 /*
 Listar de cada producto, su descripción, precio y cantidad total pedida, incluyendo sólo los productos cuya cantidad total pedida sea superior al 75% del stock; y ordenado por cantidad total pedida.
 */
+SELECT productos.descripcion, productos.precio, productos.existencias, SUM(pedidos.cant) as 'cantidad vendida' 
+FROM productos 
+INNER JOIN pedidos ON productos.idproducto = pedidos.producto
+GROUP BY pedidos.producto 
+HAVING SUM(pedidos.cant) > (productos.existencias * 0.75)
+ORDER BY SUM(pedidos.cant) DESC;
 
